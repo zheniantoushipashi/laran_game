@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent" android:background="@drawable/bgjd">
+	
+
+	<ProgressBar android:layout_height="25sp"
+		android:layout_width="fill_parent" android:layout_marginTop="380sp"
+		android:max="100"
+		android:id="@+id/progressBar1" style="@android:style/Widget.ProgressBar.Horizontal"
+		android:layout_marginLeft="20sp" android:layout_marginRight="20sp"></ProgressBar>
+	<TextView android:id="@+id/texitview2" android:text="正在加载......"
+		android:textSize="22sp" android:layout_marginTop="380sp"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:textColor="#333" android:gravity="center"
+		android:layout_marginLeft="20sp" android:layout_marginRight="20sp" />
+
+</RelativeLayout>

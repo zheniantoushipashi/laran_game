@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mainactivity"
+    android:versionCode="1"
+    android:versionName="1.0"
+ >  
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission> 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA"></uses-permission>
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.mainactivity.FirstMenu"
+             android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name" >
+           
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+       
+        <activity android:name="com.example.mainactivity.LaRanActivity"           
+            android:configChanges="orientation|keyboardHidden"          
+            >     
+        </activity>
+  <activity android:name="com.example.mainactivity.Eraser" 
+            android:configChanges="orientation|keyboardHidden"
+            >            
+        </activity>
+        <activity android:name="com.example.mainactivity.BangZhu" 
+            android:configChanges="orientation|keyboardHidden"
+            >             
+        </activity>
+         <activity android:name="com.example.mainactivity.GuanYu" 
+            android:configChanges="orientation|keyboardHidden"
+            >             
+        </activity>
+         <activity android:name="com.example.mainactivity.YinYue" 
+            android:configChanges="orientation|keyboardHidden"
+            >             
+        </activity>
+                   
+  <activity android:name="com.example.mainactivity.HuaDong" 
+            android:configChanges="orientation|keyboardHidden"
+            >             
+        </activity>
+      <activity android:name="com.example.mainactivity.SDcard" 
+            android:configChanges="orientation|keyboardHidden"
+            >             
+        </activity>   
+        <activity android:name="com.example.mainactivity.JiHeActivity" 
+            android:configChanges="orientation|keyboardHidden"
+            >             
+        </activity>
+         <activity android:name="com.example.mainactivity.ChooseImageActivity" 
+            android:configChanges="orientation|keyboardHidden"
+            >             
+        </activity>
+         <activity android:name="com.example.mainactivity.HandleImageActivity" 
+            android:configChanges="orientation|keyboardHidden"
+            >             
+        </activity>
+          <activity android:name="com.example.mainactivity.ImageFilterMain" 
+            android:configChanges="orientation|keyboardHidden"
+             android:hardwareAccelerated="true"
+            >             
+        </activity>
+         <activity android:name="com.example.mainactivity.BaoCun" 
+            android:configChanges="orientation|keyboardHidden"
+            >             
+        </activity>
+         <activity android:name="com.example.mainactivity.MainActivityA" 
+            android:configChanges="orientation|keyboardHidden"
+            >             
+        </activity>
+          <activity android:name="com.example.mainactivity.MeinActivity" 
+            android:configChanges="orientation|keyboardHidden"
+            >    
+             
+        </activity>         
+       <activity android:name="com.example.mainactivity.SecondActivity" 
+            android:configChanges="orientation|keyboardHidden"
+            >    
+            </activity>      
+              <activity android:name="com.example.game.FirstGame" 
+            android:configChanges="orientation|keyboardHidden"
+            >    
+            </activity>    
+                 <activity android:name="com.example.mainactivity.PathMenuActivity" 
+            android:configChanges="orientation|keyboardHidden"
+            >    
+            </activity>  
+                 <activity android:name="com.example.mainactivity.Stage1" 
+            android:configChanges="orientation|keyboardHidden"
+            >    
+            </activity>  
+                <activity android:name="com.example.mainactivity.JinDuTiao" 
+            android:configChanges="orientation|keyboardHidden"
+            >    
+            </activity> 
+               <activity android:name="com.example.total.total1" 
+            android:configChanges="orientation|keyboardHidden"
+            >    
+            </activity> 
+                <activity android:name="com.example.mainactivity.TVOffAnimation" 
+            android:configChanges="orientation|keyboardHidden"
+            >    
+            </activity> 
+               <activity android:name="com.example.mainactivity.JiSuan" 
+            android:configChanges="orientation|keyboardHidden"
+            >    
+            </activity> 
+                <activity android:name="com.example.mainactivity.Fail" 
+            android:configChanges="orientation|keyboardHidden"
+            >    
+            </activity> 
+                <activity android:name="com.example.mainactivity.Stage2" 
+            android:configChanges="orientation|keyboardHidden"
+            >    
+            </activity> 
+    </application>
+
+</manifest>

@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+      android:background="@drawable/beijing"
+    android:orientation="vertical"
+   
+    >
+
+    <LinearLayout
+        android:id="@+id/linearlayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+         >
+    </LinearLayout>
+     
+     <LinearLayout
+            android:id="@+id/linearlayout03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           
+            android:orientation="horizontal" >
+
+            <ImageButton
+                
+                android:id="@+id/saveP_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="保存图片" />
+
+            <ImageButton
+                
+                android:id="@+id/showP_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="查看图片" />
+                 
+        
+        
+          <ImageButton 
+            
+             android:id="@+id/xkbutton"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"          
+             android:layout_weight="1"
+             android:text="终结"
+            />
+        </LinearLayout>
+
+     <LinearLayout
+         android:id="@+id/linearlayout02"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+         android:layout_alignParentLeft="true"
+         android:orientation="horizontal" >
+
+         <ImageButton
+             
+             android:id="@+id/drawtool_btn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:text="选择图形" />
+
+         <ImageButton
+             
+             android:id="@+id/eraser_btn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:text="橡皮/画笔" />
+
+         <ImageButton
+             
+             android:id="@+id/showall"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:text="显示所有" />
+           <ImageButton
+               
+             android:id="@+id/back_btn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:text="返回" />
+               <ImageButton
+               
+             android:id="@+id/cleanAll_btn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:text="清空" />
+     </LinearLayout>
+        
+</RelativeLayout>

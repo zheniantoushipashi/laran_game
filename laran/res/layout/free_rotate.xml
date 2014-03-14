@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#232323" >
+    
+    <SeekBar 
+        android:id="@+id/seekBar"
+        android:layout_width="260dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:id="@+id/free_rotate_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dip"
+        android:layout_gravity="center"
+        android:text="重置"
+        android:onClick="OnFreeRotateReset"
+        />"
+
+</LinearLayout>

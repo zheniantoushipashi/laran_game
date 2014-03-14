@@ -1,0 +1,80 @@
+
+  
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      
+      android:orientation="vertical"
+       
+      >
+     
+     <SurfaceView 
+         android:id="@+id/surfaceview"
+         
+        android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/line"
+         android:layout_alignParentTop="true"
+         />
+     
+     <LinearLayout 
+         android:id="@+id/line"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         >
+     
+         <ImageButton 
+             android:background="@drawable/clean"
+             android:id="@+id/flushbutton"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"          
+             android:layout_weight="1"
+             android:text="清屏"
+            />
+         
+     
+         <ImageButton 
+              android:background="@drawable/ys"
+             android:id="@+id/colorbutton"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"     
+             android:text="颜色"
+             />
+         <ImageButton 
+              android:background="@drawable/xp"
+             android:id="@+id/xpbutton"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"   
+             android:text="橡皮擦"
+             />
+         <ImageButton 
+              android:background="@drawable/lr"
+             android:id="@+id/lrbutton"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"   
+             android:text="蜡染"
+             />
+          <ImageButton 
+               android:background="@drawable/hb"
+             android:id="@+id/hbbutton"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"   
+             android:text="画笔大小"
+             />
+            
+                    <ImageButton 
+                         android:background="@drawable/jihe"
+             android:id="@+id/jihebutton"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"   
+             android:text="几何图形"
+             />
+           
+    </LinearLayout>
+ </RelativeLayout>

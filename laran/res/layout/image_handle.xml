@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="#aef">
+	
+	<RelativeLayout
+	    android:id="@+id/save_step"      	    
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        
+        <Button
+            android:id="@+id/save_button"           
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:onClick="onClick"
+            android:background="@drawable/btn_step_save"/>
+        
+        <TextView
+            android:id="@+id/handle_name"         
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+        
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"  
+            android:layout_alignParentLeft="true"        
+            android:onClick="onClick"
+            android:background="@drawable/btn_step_cancel"/>
+        
+    </RelativeLayout>
+    
+	<RelativeLayout
+	    android:id="@+id/save_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        
+        <Button
+            android:id="@+id/save"            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:onClick="onClick"
+            android:text="@string/save"/>
+        
+        <Button
+            android:id="@+id/cancel"            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="@string/cancel"/>
+        
+    </RelativeLayout>
+    
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+        
+		<ImageView 
+			android:id="@+id/choose_image"       
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"/>    
+        
+    </LinearLayout>
+    
+	<LinearLayout
+	    android:id="@+id/effert_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        
+        <Button
+            android:id="@+id/edit"            
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/edit"
+            android:onClick="onClick"
+            android:drawableTop="@drawable/btn_edit"/>
+        
+        <Button
+            android:id="@+id/tone"          
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tone"
+            android:onClick="onClick"
+            android:drawableTop="@drawable/btn_color"/>
+        
+        <Button
+            android:id="@+id/effect"          
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/effect"
+            android:onClick="onClick"
+            android:drawableTop="@drawable/btn_effect"/>
+        
+        <Button
+            android:id="@+id/frame"        
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/frame"
+            android:onClick="onClick"
+            android:drawableTop="@drawable/btn_frame"/>
+        
+    </LinearLayout>
+    
+	<LinearLayout 
+	    android:id="@+id/edit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="@drawable/popup">
+	    
+	    <Button
+            android:id="@+id/crop_button"            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/crop"
+            android:textColor="@android:color/white"
+            android:onClick="onClick"
+            android:drawableTop="@drawable/btn_crop"
+            android:background="@android:color/transparent"/>
+        
+        <Button
+            android:id="@+id/rotation_button"          
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rotation"
+            android:textColor="@android:color/white"
+            android:onClick="onClick"
+            android:drawableTop="@drawable/ic_menu_rotate_left"
+            android:background="@android:color/transparent"/>
+        
+        <Button
+            android:id="@+id/reversion_button"          
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reversion"
+            android:textColor="@android:color/white"
+            android:onClick="onClick"
+            android:drawableTop="@drawable/btn_reversion"
+            android:background="@android:color/transparent"/>
+        
+        <Button
+            android:id="@+id/zoom_button"          
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zoom"
+            android:textColor="@android:color/white"
+            android:onClick="onClick"
+            android:drawableTop="@drawable/ic_menu_mapmode"
+            android:background="@android:color/transparent"/>
+	    
+	</LinearLayout>
+    
+	<LinearLayout 
+	    android:id="@+id/seek_bar"
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="@drawable/popup">
+        
+	    <LinearLayout 
+		    android:layout_width="match_parent"
+			android:layout_height="wrap_content" 
+			android:orientation="horizontal"
+			android:gravity="center_vertical">
+			
+	        <TextView 
+			    android:layout_width="45dip"
+				android:layout_height="wrap_content" 
+				android:text="@string/saturation"
+				android:textColor="@android:color/white"
+				android:gravity="center"/>
+	        
+	        <SeekBar 
+			    android:id="@+id/saturation_bar"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:progress="100" 
+				android:max="200"/>
+			
+		</LinearLayout>
+		
+	    <LinearLayout 
+		    android:layout_width="match_parent"
+			android:layout_height="wrap_content" 
+			android:orientation="horizontal"
+			android:gravity="center_vertical">
+			
+	        <TextView 
+			    android:layout_width="45dip"
+				android:layout_height="wrap_content" 
+				android:text="@string/brightness"
+				android:textColor="@android:color/white"
+				android:gravity="center"/>
+	        
+	        <SeekBar 
+			    android:id="@+id/brightness_bar"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:progress="127" 
+				android:max="255"/>
+			
+		</LinearLayout>
+		
+	    <LinearLayout 
+		    android:layout_width="match_parent"
+			android:layout_height="wrap_content" 
+			android:orientation="horizontal"
+			android:gravity="center_vertical">
+			
+	        <TextView 
+			    android:layout_width="45dip"
+				android:layout_height="wrap_content" 
+				android:text="@string/contrast"
+				android:textColor="@android:color/white"
+				android:gravity="center"/>
+	        
+	        <SeekBar 
+			    android:id="@+id/contrast_bar"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:progress="64" 
+				android:max="128"/>
+			
+		</LinearLayout>
+	    
+	    
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:id="@+id/effect_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="@drawable/popup">
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:gravity="center">
+	    
+		    <Button
+	            android:id="@+id/old_remeber_button"            
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/old_remeber"
+	            android:onClick="onClick"/>
+	        
+	        <Button
+	            android:id="@+id/sharpen_button"          
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/sharpen"
+	            android:onClick="onClick"/>
+	        
+	        <Button
+	            android:id="@+id/blur_button"          
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/blur"
+	            android:onClick="onClick"/>
+	        
+	        <Button
+	            android:id="@+id/overlay_button"          
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/overlay"
+	            android:onClick="onClick"/>
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:gravity="center">
+        
+	        <Button
+	            android:id="@+id/emboss_button"          
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/emboss"
+	            android:onClick="onClick"/>
+	        
+	        <Button
+	            android:id="@+id/film_button"          
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/film"
+	            android:onClick="onClick"/>
+	        
+	        <Button
+	            android:id="@+id/sunshine_button"          
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/sunshine"
+	            android:onClick="onClick"/>
+	        
+	        <Button
+	            android:id="@+id/neon_button"          
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/neon"
+	            android:onClick="onClick"/>
+	        
+	        <Button
+	            android:id="@+id/halo_button"          
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/halo"
+	            android:onClick="onClick"/>
+		</LinearLayout>    
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:id="@+id/frame_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="@drawable/popup">
+	    
+	    <Button
+            android:id="@+id/frame_button_one"            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:background="@drawable/frame_one"/>
+        
+        <Button
+            android:id="@+id/frame_button_two"          
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:background="@drawable/frame_two"/>
+        
+        <Button
+            android:id="@+id/frame_button_three"          
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:background="@drawable/frame_three"/>
+        
+        <Button
+            android:id="@+id/frame_button_fore"          
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:background="@drawable/frame_three"/>
+	    
+	</LinearLayout>
+	    
+	
+</LinearLayout>

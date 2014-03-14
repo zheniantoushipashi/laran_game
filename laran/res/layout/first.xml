@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <FrameLayout
+        android:id="@+id/fr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    </FrameLayout>
+    
+    <include 
+        android:id="@+id/free_rotate_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/free_rotate"
+         />
+
+    <include 
+        android:id="@+id/rotation_btn_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/rotate_btn_layout"
+         />
+    
+    <include 
+        android:id="@+id/clip_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/clip"
+         />
+    
+    <LinearLayout 
+        android:id="@+id/btn_bar"
+        android:layout_width="match_parent"
+        android:layout_height="58dip"
+        android:orientation="horizontal"
+        android:background="#454545">
+        
+        <LinearLayout 
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center" >
+        <Button
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_gravity="center"
+        	android:layout_marginTop="6dip"
+       		android:text="裁剪"
+        	android:onClick="OnClip" />
+        </LinearLayout>
+        
+        <LinearLayout 
+        android:layout_width="80dip"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical" >
+        <Button
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_gravity="center"
+        	android:layout_marginTop="7dip"
+        android:text="旋转"
+        android:onClick="OnRotate" />
+        </LinearLayout>
+        
+        <LinearLayout 
+        android:layout_width="80dip"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical" >
+        <Button
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_gravity="center"
+        	android:layout_marginTop="7dip"
+        android:text="图片"
+        android:onClick="OnGetPic" />
+        </LinearLayout>
+        
+        <LinearLayout 
+        android:layout_width="80dip"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical" >
+        <Button
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_gravity="center"
+        	android:layout_marginTop="7dip"
+        android:text="重置"
+        android:onClick="OnReset" />
+        </LinearLayout>
+    </LinearLayout>
+    
+</LinearLayout>
